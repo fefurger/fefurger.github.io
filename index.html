@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <script src="scroll-appear.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-4 pl-5 pr-5 d-flex flex-row justify-content-between">
+            <div class="d-flex flex-row">
+                <span class="navbar-brand mb-0 h3" style="font-size: 40px;">Félix Furger</span>
+                <div class="collapse navbar-collapse pt-3 ml-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Gallery<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About me</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/flambe7_wildlife/">
+                <img src="icons/insta_black.png" width="30" height="30" alt="" loading="lazy">
+            </a>
+          </nav>
+          <div class="d-flex flex-column mb-5">
+            <div class="image d-flex justify-content-start ml-5 pl-5 mt-5 mb-5" style="transition: all .80s; opacity: 1">
+                <img class="img-thumbnail" src="photos/02082020-DSC_0629.jpg" style="width: 56%; height: auto; " loading="lazy">
+                <p class="align-self-end ml-5 pb-4"><span class="font-weight-bold">Atlantic puffin</span><br><span class="font-italic">Antoya, Norway (August 2020)</span></p>
+            </div>
+            <div class="image d-flex justify-content-end mr-5 pr-5 mb-5" style="transition: all .80s; opacity: 0">
+                <p class="align-self-end mr-5 pb-4"><span class="font-weight-bold">Eurasian oystercatcher</span><br><span class="font-italic">Antoya, Norway (August 2020)</span></p>
+                <img class="img-thumbnail" src="photos/03082020-DSC_0769.jpg" style="width: 56%; height: auto; " loading="lazy">
+            </div>
+            <div class="image d-flex justify-content-start ml-5 pl-5 mb-5" style="transition: all .80s; opacity: 0">
+                <img class="img-thumbnail" src="photos/07082020-DSC_1652.jpg" style="width: 56%; height: auto; " loading="lazy">
+                <p class="align-self-end ml-5 pb-4"><span class="font-weight-bold">European reindeer</span><br><span class="font-italic">Reisa, Norway (August 2020)</span></p>
+            </div>
+            <div class="image d-flex justify-content-end mr-5 pr-5 mb-5" style="transition: all .80s; opacity: 0">
+                <p class="align-self-end mr-5 pb-4"><span class="font-weight-bold">European reindeer</span><br><span class="font-italic">Reisa, Norway (August 2020)</span></p>
+                <img class="img-thumbnail" src="photos/07082020-DSC_1670.jpg" style="width: 56%; height: auto; " loading="lazy">
+            </div>
+            <div class="image d-flex justify-content-start ml-5 pl-5 mb-5" style="transition: all .80s; opacity: 0">
+                <img class="img-thumbnail" src="photos/08082020-DSC_1864.jpg" style="width: 56%; height: auto; " loading="lazy">
+                <p class="align-self-end ml-5 pb-4"><span class="font-weight-bold">European reindeer</span><br><span class="font-italic">Nordkapp, Norway (August 2020)</span></p>
+            </div>
+            <div class="image d-flex justify-content-end mr-5 pr-5 mb-5" style="transition: all .80s; opacity: 0">
+                <p class="align-self-end mr-5 pb-4"><span class="font-weight-bold">European reindeer</span><br><span class="font-italic">Nordkapp, Norway (August 2020)</span></p>
+                <img class="img-thumbnail" src="photos/08082020-DSC_1876.jpg" style="width: 56%; height: auto; " loading="lazy">
+            </div>
+            <div class="image d-flex justify-content-start ml-5 pl-5 mb-5" style="transition: all .80s; opacity: 0">
+                <img class="img-thumbnail" src="photos/12082020-DSC_2213.jpg" style="width: 56%; height: auto; " loading="lazy">
+                <p class="align-self-end ml-5 pb-4"><span class="font-weight-bold">Parasitic yaeger</span><br><span class="font-italic">Saltstraumen, Norway (August 2020)</span></p>
+            </div>
+          </div>
+          <style>
+            .active{
+            opacity: 1!important;
+            }
+          </style>
+          <script>
+              $(document).ready(function(){
+                $(window).scroll(function(){
+                    $(".image").each(function(){
+                        var x = $(window).scrollTop() + $(window).height();
+                        var y = $(this).offset().top + ($(this).height() / 2);
+                        if (x >= y) {
+                            $(this).addClass('active');
+                            console.log('yes');
+                        };
+                    });
+                });
+            });
+          </script>
+    </body>
+</html>
