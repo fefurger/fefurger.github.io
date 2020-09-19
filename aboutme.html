@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <script src="scroll-appear.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-4 pl-5 pr-5 d-flex flex-row justify-content-between">
+            <div class="d-flex flex-row">
+                <span class="navbar-brand mb-0 h3" style="font-size: 40px;">Félix Furger</span>
+                <div class="collapse navbar-collapse pt-3 ml-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Gallery<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="aboutme.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/flambe7_wildlife/">
+                <img src="icons/insta_black.png" width="30" height="30" alt="" loading="lazy">
+            </a>
+          </nav>
+          <div class="mt-1" style="position: relative; text-align: start; color:#30201C;">
+            <img class="img-fluid" src="photos/about_me.jpg" loading="lazy" style="opacity: 0.8;">
+            <div class="mr-5 text-monospace font-weight-light text-wrap border-bottom border-dark pb-5" style="position: absolute; top: 10%; right: 7%; width: 40%; font-size: small;">
+                Félix, 23 years old.<br>
+                Trying to capture the proof of their living while we can.<br><br><br>
+                Young French wildlife photography beginner, I started taking pictures around December 2019 and can't help myself since then. I enjoy spending rainy, 
+                sunny, windy, and snowy days outside in the beautiful wildnerness. Just graduated from an engineering school in Artificial Intelligence, I am currently 
+                seeking for the authenticity and simplicity of good old mother Nature.
+            </div>
+          </div>
+          <style>
+            .active{
+            opacity: 1!important;
+            }
+          </style>
+        <script>
+            (function($){
+              $(document).on('contextmenu', 'img', function() {
+                  return false;
+              })
+            })(jQuery);
+        </script>
+    </body>
+</html>
