@@ -7,15 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
-    <body>
+    <body style="background-image: url('photos/gallery.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-color: rgba(255,255,255,0.6); background-blend-mode: lighten;">
         <script src="scroll-appear.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-4 pl-5 pr-5 d-flex flex-row justify-content-between">
-            <div class="d-flex flex-row">
-                <span class="navbar-brand mb-0 h3" style="font-size: 40px;">Félix Furger</span>
-                <div class="collapse navbar-collapse pt-3 ml-4" id="navbarNav">
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-4 pl-5 pr-5 d-flex flex-row justify-content-between" style="background: rgba(255,255,255,0.6)">
+            <span class="navbar-brand mb-0 h3" style="font-size: 40px;">Félix Furger</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pt-3 ml-4" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                     <a class="nav-link" href="index.html">Gallery<span class="sr-only">(current)</span></a>
@@ -27,52 +29,52 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-                </div>
             </div>
-            <a href="https://www.instagram.com/felix.furger.wildlife/">
-                <img src="icons/insta_black.png" width="30" height="30" alt="" loading="lazy">
-            </a>
           </nav>
-          <div class="d-flex flex-column mb-5">
-            <div class="image d-flex justify-content-start ml-5 pl-5 mt-5 mb-5 align-items-start" style="transition: all .80s; opacity: 1;">
-                <img class="img-thumbnail" src="photos/photo1.jpg" style="width: 56%; height: auto; " loading="lazy">
-                <p class="align-self-end ml-5 pb-4"><span class="font-weight-bold">Common gull</span><br><span class="font-italic">Buneset, Lofoten, Norway (July 2020)</span></p>
+          <div class="d-flex flex-column align-items-center mb-5">
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 1;">
+                <img class="img-thumbnail mb-1" src="photos/photo1.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">Common gull</span><br><span class="font-italic">Buneset, Lofoten, Norway (July 2020)</span></p>
             </div>
-            <div class="image d-flex justify-content-end mr-5 pr-5 mb-5 align-items-start" style="transition: all .80s; opacity: 0;">
-                <p class="align-self-end mr-5 pb-4"><span class="font-weight-bold">Red-necked phalarope</span><br><span class="font-italic">Røst, Lofoten, Norway (July 2020)</span></p>
-                <img class="img-thumbnail" src="photos/photo2.jpg" style="width: 56%; height: auto; " loading="lazy">
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo2.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">Red-necked phalarope</span><br><span class="font-italic">Røst, Lofoten, Norway (July 2020)</span></p>
             </div>
-            <div class="image d-flex justify-content-start ml-5 pl-5 mb-5 align-items-start" style="transition: all .80s; opacity: 0;">
-                <img class="img-thumbnail" src="photos/photo3.jpg" style="width: 56%; height: auto; " loading="lazy">
-                <p class="align-self-end ml-5 pb-4"><span class="font-weight-bold">Musk ox</span><br><span class="font-italic">Dovrefjell, Norway (August 2020)</span></p>
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo3.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">Musk ox</span><br><span class="font-italic">Dovrefjell, Norway (August 2020)</span></p>
             </div>
-            <div class="image d-flex justify-content-end mr-5 pr-5 mb-5 align-items-start" style="transition: all .80s; opacity: 0;">
-                <p class="align-self-end mr-5 pb-4"><span class="font-weight-bold">Eurasian oystercatcher</span><br><span class="font-italic">Røst, Norway (July 2020)</span></p>
-                <img class="img-thumbnail" src="photos/photo4.jpg" style="width: 56%; height: auto; " loading="lazy">
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo4.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">Eurasian oystercatcher</span><br><span class="font-italic">Røst, Norway (July 2020)</span></p>
             </div>
-            <div class="image d-flex justify-content-start ml-5 pl-5 mb-5 align-items-start" style="transition: all .80s; opacity: 0;">
-                <img class="img-thumbnail" src="photos/photo5.jpg" style="width: 56%; height: auto; " loading="lazy">
-                <p class="align-self-end ml-5 pb-4"><span class="font-weight-bold">Eurasian oystercatcher</span><br><span class="font-italic">Andøya, Norway (August 2020)</span></p>
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo5.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">Eurasian oystercatcher</span><br><span class="font-italic">Andøya, Norway (August 2020)</span></p>
             </div>
-            <div class="image d-flex justify-content-end mr-5 pr-5 mb-5 align-items-start" style="transition: all .80s; opacity: 0;">
-                <p class="align-self-end mr-5 pb-4"><span class="font-weight-bold">Common kestrel</span><br><span class="font-italic">Pyrénées, France (July 2020)</span></p>
-                <img class="img-thumbnail" src="photos/photo6.jpg" style="width: 56%; height: auto; " loading="lazy">
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo6.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">Common kestrel</span><br><span class="font-italic">Pyrénées, France (July 2020)</span></p>
             </div>
-            <div class="image d-flex justify-content-start ml-5 pl-5 mb-5 align-items-start" style="transition: all .80s; opacity: 0;">
-                <img class="img-thumbnail" src="photos/photo7.jpg" style="width: 56%; height: auto; " loading="lazy">
-                <p class="align-self-end ml-5 pb-4"><span class="font-weight-bold">Parasitic yaeger</span><br><span class="font-italic">Saltstraumen, Norway (August 2020)</span></p>
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo7.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">Parasitic yaeger</span><br><span class="font-italic">Saltstraumen, Norway (August 2020)</span></p>
             </div>
-            <div class="image d-flex justify-content-end mr-5 pr-5 mb-5 align-items-start" style="transition: all .80s; opacity: 0;">
-                <p class="align-self-end mr-5 pb-4"><span class="font-weight-bold">European reindeer</span><br><span class="font-italic">Nordkapp, Norway (August 2020)</span></p>
-                <img class="img-thumbnail" src="photos/photo8.jpg" style="width: 56%; height: auto; " loading="lazy">
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo8.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">European reindeer</span><br><span class="font-italic">Nordkapp, Norway (August 2020)</span></p>
             </div>
-            <div class="image d-flex justify-content-start ml-5 pl-5 mb-5 align-items-start" style="transition: all .80s; opacity: 0;">
-                <img class="img-thumbnail" src="photos/photo9.jpg" style="width: 56%; height: auto; " loading="lazy">
-                <p class="align-self-end ml-5 pb-4"><span class="font-weight-bold">European reindeer</span><br><span class="font-italic">Nordkapp, Norway (August 2020)</span></p>
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo11.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">Coypu</span><br><span class="font-italic">France, Occitanie (September 2020)</span></p>
             </div>
-            <div class="image d-flex justify-content-end mr-5 pr-5 mb-5 align-items-start" style="transition: all .80s; opacity: 0;">
-                <p class="align-self-end mr-5 pb-4"><span class="font-weight-bold">Atlantic puffin</span><br><span class="font-italic">Andøya, Norway (August 2020)</span></p>
-                <img class="img-thumbnail" src="photos/photo10.jpg" style="width: 56%; height: auto; " loading="lazy">
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo9.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">European reindeer</span><br><span class="font-italic">Nordkapp, Norway (August 2020)</span></p>
+            </div>
+            <div class="image d-flex align-items-center flex-column mt-5" style="transition: all .80s; opacity: 0;">
+                <img class="img-thumbnail mb-1" src="photos/photo10.jpg" style="max-width: 850px; width: 92%; height: auto; " loading="lazy">
+                <p class="text-center" style="max-width: 500px; width: 70%"><span class="font-weight-bold">Atlantic puffin</span><br><span class="font-italic">Andøya, Norway (August 2020)</span></p>
             </div>
           </div>
           <style>
