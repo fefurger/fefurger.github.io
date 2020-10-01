@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About me</title>
+        <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body style="background-image: url('photos/aboutme.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-color: rgba(255,255,255,0.5); background-blend-mode: lighten; height: 100%;">
+        <script src="scroll-appear.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm mb-5 p-4 pl-5 pr-5 d-flex flex-row justify-content-between" style="background: rgba(255,255,255,0.6)">
+            <span class="navbar-brand mb-0 h3" style="font-size: 40px;">Félix Furger</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pt-3 ml-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="gallery_en.html">Gallery<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="aboutme_en.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact_en.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="m-2 ml-4 d-flex flex-column pt-1" href="aboutme_fr.html">
+                            <img src="icons/french.png" width="30" style="opacity: 0.8;" alt="" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+          <div class="mt-1">
+            <div class="mr-5 text-monospace text-dark text-center text-wrap pb-5 d-flex flex-row-reverse mx-5 px-5 mt-5 pt-5" style="font-size: small;">
+                <div class="shadow-lg py-5 px-2" style="width: 700px; background: rgba(255,255,255,0.2)">
+                    Félix, 23
+                    <br><br>
+                    I am a French novice wildlife photographer based in Toulouse.<br> I have always loved being in nature but recently discovered
+                    a passion for photographing the living things whose path I cross. Just graduated from an engineering school in Artificial Intelligence, I am currently 
+                    seeking for the authenticity and simplicity of good old mother Nature.
+                </div>
+            </div>
+          </div>
+          <style>
+            .active{
+            opacity: 1!important;
+            }
+          </style>
+        <script>
+            (function($){
+              $(document).on('contextmenu', 'img', function() {
+                  return false;
+              })
+            })(jQuery);
+        </script>
+    </body>
+</html>
